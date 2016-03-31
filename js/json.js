@@ -26,8 +26,19 @@ personCardApp.controller('personCtrl',function($scope,$http){
 			$scope.msg="404 No data found";
 		}
 	}
+	$scope.editPerson=function(aPerson){
 
-	
+		$scope.person=aPerson;
+		
+		console.log(aPerson);
+		
+
+	}
+	$scope.updatePerson=function(aPerson){
+		aPerson=$scope.person;
+		$scope.person=null;
+		 
+	}
 });
 
 // personCardApp.controller('personCtrl',function($scope,$http){
