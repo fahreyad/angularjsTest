@@ -1,0 +1,10 @@
+[
+	{"firstName":"Abul","lastName":"Faez","gender":"Male","nationality":"Bangladeshi","age":26},
+	{"firstName":"Badol","lastName":"Hossain","gender":"Male","nationality":"Netherland","age":24},
+	{"firstName":"Moshiur","lastName":"Rahman","gender":"Male","nationality":"Bangladeshi","age":28},
+	{"firstName":"Fahreyad","lastName":"Hassan","gender":"Male","nationality":"Bangladeshi","age":27},
+	{"firstName":"Ruma","lastName":"Akter","gender":"Female","nationality":"Bangladeshi","age":23},
+	{"firstName":"Sanjay","lastName":"Paul","gender":"Male","nationality":"China","age":28},
+	{"firstName":"Hosneara","lastName":"Akter","gender":"Female","nationality":"Bangladeshi","age":30},
+	{"firstName":"Fahreyad","lastName":"Vai","gender":"Male","nationality":"Bangladeshi","age":29}
+] 	

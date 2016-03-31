@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="personCardApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Object In Js</title>
+	<link rel="stylesheet" href="css/package/bootstrap.min.css">
+	<link rel="stylesheet" href="css/package/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/jsondatatest.css">
+</head>
+<body ng-controller="personCtrl">
+<div class="container">
+	<div class="panel">
+		<h2 class="panel-heading">Person Card</h2>
+		<div class="row">
+			<h2 style="margin-left:20px;">{{msg}}</h2>
+			<div class="col-xs-3" ng-repeat="person in personObj">
+
+				<table class="table table-striped table-bordered border-custom">
+					<tr><button ng-click="deletePerson(person)">X</button></tr>
+					<tr>
+						<th>Name:</th>
+						<td>{{person.firstName + ' ' + person.lastName}}</td>
+					</tr>
+					<tr>
+						<th>Nationality:</th>
+						<td>{{person.nationality}}</td>
+					</tr>
+					<tr>
+						<th>Gender:</th>
+						<td>{{person.gender}}</td>
+					</tr>
+					<tr>
+						<th>Age:</th>
+						<td>{{person.age}}</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="well">
+		<form >
+			<div class="form-group">
+				<label for="firstName">First Name: </label>
+				<input type="text" ng-model="person.firstName" id="firstName">
+			</div>
+			<div class="form-group">
+				<label for="lastName">Last Name: </label>
+				<input type="text" ng-model="person.lastName" id="lastName">
+			</div>
+			<div class="form-group">
+				<label for="gender">Gender: </label>
+				<input type="text" ng-model="person.gender" id="gender">
+			</div>
+			<div class="form-group">
+				<label for="nationality">Nationality: </label>
+				<input type="text" ng-model="person.nationality" id="nationality">
+			</div>
+			<div class="form-group">
+				<label for="age">Age: </label>
+				<input type="text" ng-model="person.age" id="age">
+			</div>	
+			<button type="submit" class="btn btn-success" ng-click="addNewPerson(person)"> Add</button>
+		</form>
+	</div>
+</div>
+
+<script src="js/package/jquery-1.12.2.min.js"></script>
+<script src="js/package/angular.min.js"></script>
+<script src="js/package/bootstrap.min.js"></script>
+<script src="js/json.js"></script>
+
+</body>
+</html>
